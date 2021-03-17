@@ -1,7 +1,7 @@
 const MOCK_MODE = false;
 const _endpoint = location.host.includes("localhost")
   ? "http://localhost:8300"
-  : "https://domain.com";
+  : "https://covalent-backend.herokuapp.com";
 function makeUrl(x: string) {
   return new URL(x, _endpoint).href;
 }
